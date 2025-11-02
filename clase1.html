@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="cabecera">Clase con Claudio Rossi</h1>
+    </header>
+    <h3 class="titulos">Ciclo di vita del Software</h3>
+    <p class="texto">
+        Il ciclo di vita di un Software è il processo che parte con l'idea e termina con l'installazione del prodotto finito dal cliente che l'ha commissionato. <br>
+        Il ciclo di vita classico (modello top-down) è costituito da diversi elementi sequenziali, nel tempo questo modello è affiancato da altri più moderni.
+    </p>
+    <ol>
+        <li>Analisi</li>
+        <li>Progettazione</li>
+        <li>Implementazione</li>
+        <li>Collaudo</li>
+        <li>Distribuzione</li>
+        <li>Manutenzione</li>
+    </ol>   
+    <h3 class="titulos">Analisi</h3>
+    <p class="texto">
+        Il processo di Analisi parte con un'intervista al committente. Durante l'intervista, l'analista deve comprendere tutte le necessità operative che devono essere soddisfatte dal software. <br>
+        L'analista deve:
+    </p>
+    <ul>
+        <li>Comprendere le necessità operative (cosa deve fare il software)</li>
+        <li>Definire l'utente (chi utilizzerà il software)</li>
+        <li>Definire il contesto tecnologico (su quali computer deve funzionare il software)</li>
+        <li>Definire gli input (quali dati vengono inseriti e come)</li>
+        <li>Definire gli output (quali dati vengono prodotti e come)</li>
+    </ul>
+    <p class="texto">
+        L'analista produce il documento di specifiche funzionali, questo documento contiene tutte le informazioni prodotte in fase di analisi. <br>
+        Il documento di specifiche funzionali deve essere accettato dal cliente, questo documento tutela il committente 
+        (perchè il software dovrà fare tutto quello che è specificato nel documento) e il fornitore (perchè il software non dovrà fare nulla di più di quello che è specificato nel documento). <br>
+        Il documento di specifiche funzionali (dopo che è stato accettato dal committente) viene inviato ai progettisti. <br>
+        Il processo di analisi non richiede software specifici, ma è sufficiente un word processor per stendere il documento di specifiche funzionali. <br>
+    </p>
+    <h3 class="titulos">Progettazione</h3>
+    <p class="texto">
+        Il progettista riceve il documento di specifiche funzionali, da questo deriva un progetto. <br>
+        Il progetto di software è uno schema che scompone il software nei suoi elementi base, questi elementi devono collaborare fra loro per implementare tutte le funzionalità richieste. 
+        Una scomposizione tipica è quella per livelli, che prevede:
+    </p>
+    <ul>
+        <li>DAL (Data Access Layer), parte del software che legge e scrive i dati nel datebase (archivo)</li>
+        <li>Flussi, parte del software che controlla e trasforma i dati</li>
+        <li>GUI (Graphical User Interface), parte che dialoga con l'utente</li>
+    </ul>
+    <ol>
+        <li>GUI</li>
+        <li>Flussi</li>
+        <li>DAL
+            <ul>
+                <li>DB</li>
+            </ul>
+        </li>
+    </ol>
+    <p>
+        Il progettista deve decidere quale blocchi dello schema devono essere prodotti, quali devono essere acquisiti dall'esterno, quali devono essere riutilizzati. <br>
+        I blocchi devono dialogare fra loro, scambiandosi dati, in modo che i blocchi possano lavorare assieme come un unico software. <br>
+        La scomposizione può essere multilivello: al primo livello si crea una scomposizione a macroaree, 
+        nella quale ci si concentra sui principali aspetti funzionali, ai livelli successivi ogni blocco viene ulteriormente smontato in blocchi più piccoli. <br>
+        <img src="C:\Users\facu_\Pictures\Screenshots\Captura de pantalla 2025-11-02 235507.png" alt="cuadro 1" style="width: 781px; height: 401px;"> <br>
+        Il progettista deve indicare, per ogni blocco, quali informazioni escono, quali informazioni entrano, quali vincoli sono previsti (dati obbligatori, tipi di dato, ...). <br>
+        Ogni blocco può essere riutilizzato in progetti futuri (o importato da quelli passati), questo semplifica lo sviluppo, questo ha portato nel tempo a progetti standardizzati (framework, librerie, ...) e 
+        a best practice diffuse. <br>
+        Un framework è un sistema che crea automaticamente (in fase di implementazione) la struttura dei blocchi, una libreria è un blocco già pronto acquisito esternamente. <br>
+        Esistono linguaggi standard per la stesura di progetti, il più diffuso è UML (Unified Modeling Language) <br>
+        UML consente di rappresentare lo schema progettuale (blocchi e dati in ingresso/uscita) in maniera standardizzata, 
+        questo consente di utilizzare strumenti che creano automaticamente la struttura del software a partire dal codice UML
+    </p>
+    
+</body>
+</html>
