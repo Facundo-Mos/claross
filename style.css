@@ -1,0 +1,84 @@
+/* ======= ENCABEZADO PRINCIPAL DE LA PÁGINA ======= */
+header {
+    background-color: rgb(17, 10, 41);  /* Color de fondo oscuro del encabezado */
+    color: white;                       /* Texto en color blanco dentro del header */
+    padding: 2rem 2rem;                 /* Espaciado interno (superior/inferior y laterales) */
+}
+
+/* ======= ESTILO PARA EL TÍTULO PRINCIPAL DENTRO DEL HEADER ======= */
+.cabecera {
+    position: relative;                 /* Permite posicionar elementos hijos de forma absoluta si es necesario */
+    text-align: center;                 /* Centra el texto horizontalmente */
+    font-size: 40px;                    /* Tamaño grande de fuente */
+    font-family: "Momo Trust Display", sans-serif;  /* Tipo de fuente personalizada */
+    font-weight: 400;                   /* Grosor de la fuente: normal */
+    font-style: normal;                 /* Fuente sin cursiva */
+}
+
+/* ======= ESTILO GENERAL DEL CUERPO DE LA PÁGINA ======= */
+body {
+    background-color: #F2F2F2;          /* Fondo gris claro para toda la página */
+}
+
+/* ======= SEGUNDOS TÍTULOS O SUBTÍTULOS ======= */
+.titulo2 {
+    text-align: center;                 /* Centra el texto horizontalmente */
+}
+
+/* ======= ESTILO PARA TÍTULOS DESTACADOS CON RECUADRO ======= */
+.titulos {
+    position: relative;                 /* Base para posicionar elementos hijos relativos */
+    font-size: 40px;                    /* Tamaño grande de texto */
+    font-family: "Momo Trust Display", sans-serif;  /* Fuente personalizada */
+    font-weight: 400;                   /* Peso de fuente normal */
+    font-style: normal;                 /* Fuente sin cursiva */
+
+    border: 2px solid black;            /* Borde negro alrededor del texto */
+    display: inline-block;              /* Ajusta el ancho del recuadro al contenido del texto */
+    padding: 10px 20px;                 /* Espaciado interno dentro del recuadro */
+    border-radius: 8px;                 /* Esquinas redondeadas del recuadro */
+}
+
+/* ======= ESTILO GENERAL PARA PÁRRAFOS O BLOQUES DE TEXTO ======= */
+.texto {
+    text-align: center;                 /* Centra el texto horizontalmente */
+    position: relative;                 /* Permite posicionamiento relativo */
+    font-family: "Momo Trust Display", sans-serif;  /* Misma fuente para coherencia visual */
+    font-weight: 400;                   /* Grosor de texto normal */
+    font-style: normal;                 /* Sin cursiva */
+}
+
+/* ======= ESTILO BASE PARA TODAS LAS ETIQUETAS <div> ======= */
+div {
+    position: relative;                 /* Base para posicionar contenido dentro del div */
+    font-family: "Momo Trust Display", sans-serif;  /* Fuente unificada en todos los divs */
+    font-weight: 400;                   /* Peso normal */
+    font-style: normal;                 /* Sin cursiva */
+}
+
+/* ======= LISTAS ORDENADAS (CON NÚMEROS) ======= */
+ol {
+    text-align: center;                 /* Centra el contenido de los elementos de la lista */
+    list-style-position: inside;        /* Mueve los números dentro del bloque de texto */
+    padding-left: 0;                    /* Elimina el margen izquierdo por defecto */
+}
+
+/* ======= LISTAS DESORDENADAS (CON VIÑETAS) ======= */
+ul {
+    text-align: center;                 /* Centra el contenido de los elementos de la lista */
+    list-style-position: inside;        /* Mueve las viñetas dentro del texto */
+    padding-left: 0;                    /* Quita el margen izquierdo predeterminado */
+    font-family: "Momo Trust Display", sans-serif;  /* Fuente uniforme */
+    font-weight: 400;                   /* Grosor normal */
+    font-style: normal;                 /* Sin cursiva */
+}
+ul{
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
