@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Clase 4</title>
+</head>
+<body>
+    <header>
+        <h1>Clase di Claudio Rossi</h1>
+    </header>
+    <h3>Software copilato/interpretato</h3>
+    <p>
+        Il software può esssere eseguito solamente se è scritto in linguaggio macchina (una sequenza di bit) <br>
+        Il linguaggio macchina è molto lontano da quello umano, questo comporta la necessità di utilizzare linguaggi di programazione che simplifichino il dialogo fra lo sviluppatore
+        e il computer, per poter essere eseguito, il codice di programmazione (php, javascript,...) deve essere tradotto in linguaggio macchina. <br>
+        il linguaggio macchina è diverso un base all' architettura della CPU, questo porterebbe ad una elevata complessità nella gestione della programmazione, se questa fosse 
+        specifica per ogni linguaggio macchina. <br>
+        Per consentire di far funzionare i software su tutti computer (più architetture possibile) esistono diverse soluzioni, le principali sono legate ad 
+        "astrazioni" del computer, ossia a sistemi di programmazione independenti dal computer fisico sul quale funziona il software. <br>
+        Quando si programma con un sistema astratto, si genera sempre un ritardo nell'esecuzione del software.
+        Anche se i sorgenti vengono scritti con linguaggisimili al umano (PHP, javascript,...), detti linguaggidi alto livello, esistono due tipologie principali di software
+        <ol>
+            <li>Software compilato, dai sorgenti viene generato un file (eseguibile) in codice macchina</li>
+            <li>software interpretato, i sorgenti vengono tradotti in codice macchina durante l'esecuzione del software</li>
+        </ol>
+        <span>Il software compilato</span> viene scritto di un linguaggio di programmazione di alto livello (C,C++,...), un sistema automatico (compilatore) traduce il linguaggio di programazione
+        in linguaggio macchina, generando un file (eseguibile) che può essere eseguito nativamente dal computer. <br>
+        Il software compilato è veloce da eseguire (non sono necessarie traduzioni durante l'esecuzione), utilizza poche risorse, richiede una programmazione diversa in base
+        all'architettura della CPU di destinazione. <br>
+        <span>Il software interpretato</span> viene scritto in un linguaggio di programmazione di alto livello (PHP,Js,...), 
+        un software apposito (interprete) traduce ogni singola istruzione
+        del sorgente in linguaggio macchina durante l'esecuzione del software, il software interpretato richiede più risorse (CPU, RAM, ...) per funzionare, ma funziona
+        su qualsiasi architettura di CPU.
+    </p>
+    <h3>Pseudocodice</h3>
+    <p>
+        Lo pseudocodice è il linguaggio naturale, utilizzato per schematizzare il codice di programmazione di un software. <br>
+        Utilizzando lo pseudocodice, gli sviluppatore si concentrano sul processo di soluzioni (pasaggi necessari per risolvere il problema),
+        invece che sui dettagli implementativi (codice di programazione). <br>
+        Lo pseudocodice è veloce da scrivere e consentedi strutturare l'architettura del codice di programmazione, concentrandoci sui passi principali del processo 
+        da implementare. <br>
+        Dopo aver strutturato la soluzione utilizzando lo pseudocodice, è facile scrivere il codice di programmazione(codice sorgente).
+    </p>
+    <h3>Commenti</h3>
+    <p>
+        Lo pseudocodice viene normalmente lasciato all'interno dei codici sorgente sotto forma di commento. <br>
+        Un commento è una spiegazione di quello che fa la parte seguente del codice <br>
+        <img src="" alt="primera imagen"> <br>
+        i commenti aitano sia gli implementatori, semplificando la scrittura del codice e la leggibilità del medesimo, sia le IA a supporto dello sviluppo. <br>
+        I commenti sono di due tipi principali:
+        <ul>
+            <li>Commenti funzionali, documentano </li>
+            <li></li>
+        </ul>
+        <img src="" alt="segunda imagen"><br>
+        Esempio
+        Scrivere un programma che riceve un numero, se il numero è pari, lo stampa un numero di volte pari alla metà
+        del numero ricevuto, se è dispari lo stampa tante volte quante indicate nel numero ricevuto <br>
+        <ul>
+            <li>Verifico se il valore ricevuto è nullo, se è nullo stampo "errore"</li>
+            <li>Verifico se il valore ricevuto è pari
+                <ul>
+                    <li>Se è pari</li>
+                    <ul>
+                        <li>Calcolo la metàa del valore ricevuto</li>
+                        <li>Stampo il valore la metàa delle volte</li>
+                    </ul>
+                    <li>Se non è pari</li>
+                    <ul>
+                        <li>Stampo il valore tante volte quanto indicato nel valore</li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+    </p>
+    <h3>Esercizio</h3>
+    <p>
+        Scrivere l'algoritmo in pseudocodice che calcola il fattoriale di un numero(n)
+        <ul>
+            <li>Verifico se il numero è maggiore di 0</li>
+            <ul>
+                <li>Se non è maggiore di 0 restituisco "errore"</li>
+                <li>Se è maggiore di 0, imposto il risultato al valore di n</li>
+                <li>Per n-1 volte</li>
+                <li>Moltiplico il risultato per il suo precedente (n-1)</li>
+                <li>Aggiorno il valore di n al suo precedente</li>
+            </ul>
+        </ul>
+    </p>
+    <h3>Collaudo</h3>
+    <p>
+        Dopo la fase di implementazione si passa alla fase di collaudo. <br>
+        La fase di collaudo serve a verificare che il software funzioni correttamente. <br>
+        Un software funziona correttamente se:
+        <ul>
+            <li>Dati gli input previsti, produce gli output attesi</li>
+            <li>Funzioni nei tempi previsti sugli esecutori previsti</li>
+            <li>Funzioni senza interruzioni impreviste</li>
+        </ul>
+        Gli output previsti in funzione degli input derivano dal documento di specifiche funzionali, per fare questo si stila un protocollo di test. <br>
+        Il protocollo di test è un insieme di prove con input e output noti, questo protocollo può essere incrementato nel tempo, con l'aggiunta di nuovi casi. <br>
+        Il protocollo di test consente di generare i casi per il continuous testing, garantendo un controllo certo dei casi presvisti
+    </p>
+    <h3>Issue Tracking</h3>
+    <p>
+        un Issue Tracking System (o Issue Tracker) è un sistema client-server che centralizza la segnalazione degli errori da correggere e delle modifiche da apportare 
+        ad un software. <br>
+        L'issue tracker può essere utilizzato solamente all'interno dell'azienda, ma può essere aperto all'esterno per consentire agli utenti di segnalare errori o richiedere
+        implementazioni. <br>
+        L'issue tracker consente di:
+        <ul>
+            <li>Resgistrare una segnalazione</li>
+            <li>Assegnare una priorità alle segnalazioni</li>
+            <li>Assegnare una segnalazione ad uno sviluppatore</li>
+            <li>Gestire il flusso di informazioni relative alla chiusura della segnalazione</li>
+        </ul>
+        Gli issue tracker sono preziosi perchè consente di non dimenticare i problemi in sospeso e di tenere traccia dello stato di avanzamento lavori. <br>
+        GitHub contiene un issue tracker che può essere abilitato per ogni repository <br>
+        <img src="" alt="tercera imagen">
+        <img src="" alt="cuarta imagen">
+        <img src="" alt="quinta imagen">
+
+    </p>
+
+
+<!--Controlar las cosas que faltan en el medio.-->
+
+
+
+    <h3>Fork</h3>
+    <P>
+        GIT consente di creare un fork di un repository (comando git fork), il fork genera un nuovo repository con lo stesso contenuto del repository originale, congelato
+        al momento dell'operazione. <br>
+        Il nuovo repository ottenuto rimane collegato a quello originale, rendendo possibile importare gli aggiornamenti pubblicati sul repository originale, ma consente di portare
+        avanti uno sviluppo indipendente, a partire da un progetto originale. <br>
+        Il fork consente di creare un proprio progetto a partire da un progetto già esistente, ereditando tutto il codice di quello originale per concentrarsi sulle modifiche
+        che vogliamo apportare. <br>
+        Es: Libre Office è un fork di Open Office
+    </P>
+    <h3>Branch</h3>
+    <p>
+        Un branch è una derivazione di un repository che consente di sviluppare nuove versioni del software, senza perdere lo stato principale. <br>
+        normalmente viene creato un branch per provare una nuova implementazione, senza modificare la versione in uso presso i clienti (ramo principale), questo consente
+        di intervenire per correggereerrori nella versione in uso presso il cliente, senza tenere in conto delle modifiche in corso per la nuova versione. 
+        <img src="" alt="">
+        
+    </p>
+
+</body>
+</html>
