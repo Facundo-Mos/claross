@@ -1,151 +1,154 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="it">
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
-    <title>Clase con Claudio Rossi</title>
+    <title>Classe con Claudio Rossi</title>
 </head>
 <body>
     <header>
-        <h1 class="cabecera">Clase di Claudio Rossi</h1>
+                <h1 class="cabecera">Classe di Claudio Rossi</h1>
     </header>
-    <div class="titulo2">
-        <h3 class="titulos">Ciclo di vita del Software</h3>
-    </div>
-    <p class="texto">
-        Il ciclo di vita di un Software è il processo che parte con l'idea e termina con l'installazione del prodotto finito dal cliente che l'ha commissionato. <br>
-        Il ciclo di vita classico (modello top-down) è costituito da diversi elementi sequenziali, nel tempo questo modello è affiancato da altri più moderni.
-    </p>
-    <div class="listas">
-        <ol>
-            <li>Analisi</li>
-            <li>Progettazione</li>
-            <li>Implementazione</li>
-            <li>Collaudo</li>
-            <li>Distribuzione</li>
-            <li>Manutenzione</li>
-        </ol>
-    </div>
-    <div class="titulo2">  
+    <section>
+        <h2 class="titulos">Ciclo di vita del Software</h2>
+    </section>
+    <article class="container">
+        <p class="texto">
+            Il ciclo di vita di un Software è il processo che parte con l'idea e termina con l'installazione del prodotto finito dal cliente che l'ha commissionato. <br>
+            Il ciclo di vita classico (modello top-down) è costituito da diversi elementi sequenziali, nel tempo questo modello è affiancato da altri più moderni.
+        </p>
+        <div class="listas">
+            <ol>
+                <li>Analisi</li>
+                <li>Progettazione</li>
+                <li>Implementazione</li>
+                <li>Collaudo</li>
+                <li>Distribuzione</li>
+                <li>Manutenzione</li>
+            </ol>
+        </div>
+    </article>
+    <section>  
         <h3 class="titulos">Analisi</h3>
-    </div>
-    <p class="texto">
-        Il processo di Analisi parte con un'intervista al committente. Durante l'intervista, l'analista deve comprendere tutte le necessità operative che devono essere soddisfatte dal software. <br>
-        L'analista deve:
-        <ul>
-            <li>Comprendere le necessità operative (cosa deve fare il software)</li>
-            <li>Definire l'utente (chi utilizzerà il software)</li>
-            <li>Definire il contesto tecnologico (su quali computer deve funzionare il software)</li>
-            <li>Definire gli input (quali dati vengono inseriti e come)</li>
-            <li>Definire gli output (quali dati vengono prodotti e come)</li>
-        </ul>
-    </p>
-    <p class="texto">
-        L'analista produce il documento di specifiche funzionali, questo documento contiene tutte le informazioni prodotte in fase di analisi. <br>
-        Il documento di specifiche funzionali deve essere accettato dal cliente, questo documento tutela il committente 
-        (perchè il software dovrà fare tutto quello che è specificato nel documento) e il fornitore (perchè il software non dovrà fare nulla di più di quello che è specificato nel documento). <br>
-        Il documento di specifiche funzionali (dopo che è stato accettato dal committente) viene inviato ai progettisti. <br>
-        Il processo di analisi non richiede software specifici, ma è sufficiente un word processor per stendere il documento di specifiche funzionali. <br>
-    </p>
-    <div class="titulo2">
+    </section>
+    <article class="container">
+        <p class="texto">
+            Il processo di Analisi parte con un'intervista al committente. Durante l'intervista, l'analista deve comprendere tutte le necessità operative che devono essere soddisfatte dal software. <br>
+            L'analista deve:
+        </p>
+            <ul>
+                <li>Comprendere le necessità operative (cosa deve fare il software)</li>
+                <li>Definire l'utente (chi utilizzerà il software)</li>
+                <li>Definire il contesto tecnologico (su quali computer deve funzionare il software)</li>
+                <li>Definire gli input (quali dati vengono inseriti e come)</li>
+                <li>Definire gli output (quali dati vengono prodotti e come)</li>
+            </ul>
+        <p class="texto">
+            L'analista produce il documento di specifiche funzionali, questo documento contiene tutte le informazioni prodotte in fase di analisi. <br>
+            Il documento di specifiche funzionali deve essere accettato dal cliente, questo documento tutela il committente 
+            (perchè il software dovrà fare tutto quello che è specificato nel documento) e il fornitore (perchè il software non dovrà fare nulla di più di quello che è specificato nel documento). <br>
+            Il documento di specifiche funzionali (dopo che è stato accettato dal committente) viene inviato ai progettisti. <br>
+            Il processo di analisi non richiede software specifici, ma è sufficiente un word processor per stendere il documento di specifiche funzionali. <br>
+        </p>
+    </article>
+    <section>
         <h3 class="titulos">Progettazione</h3>
-    </div>
-    <p class="texto">
-        Il progettista riceve il documento di specifiche funzionali, da questo deriva un progetto. <br>
-        Il progetto di software è uno schema che scompone il software nei suoi elementi base, questi elementi devono collaborare fra loro per implementare tutte le funzionalità richieste. 
-        Una scomposizione tipica è quella per livelli, che prevede:
-    </p>
-    <ul>
-        <li>DAL (Data Access Layer), parte del software che legge e scrive i dati nel datebase (archivo)</li>
-        <li>Flussi, parte del software che controlla e trasforma i dati</li>
-        <li>GUI (Graphical User Interface), parte che dialoga con l'utente</li>
-    </ul>
-    <div class="listas">
-        <ol>
-            <li>GUI</li>
-            <li>Flussi</li>
-            <li>DAL
-                <ul>
-                    <li>DB</li>
-                </ul>
-            </li>
-        </ol>
-    </div>
-    <p class="texto">
-        Il progettista deve decidere quale blocchi dello schema devono essere prodotti, quali devono essere acquisiti dall'esterno, quali devono essere riutilizzati. <br>
-        I blocchi devono dialogare fra loro, scambiandosi dati, in modo che i blocchi possano lavorare assieme come un unico software. <br>
-        La scomposizione può essere multilivello: al primo livello si crea una scomposizione a macroaree, 
-        nella quale ci si concentra sui principali aspetti funzionali, ai livelli successivi ogni blocco viene ulteriormente smontato in blocchi più piccoli. <br>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="720"
-            height="320"
-            viewBox="0 0 720 320"
-            style="background:#F2F2F2"
-            >
-            <!-- Líneas de conexión -->
-            <line x1="360" y1="60" x2="220" y2="140" stroke="#d32f2f" stroke-width="1.5" />
-            <line x1="360" y1="60" x2="500" y2="140" stroke="#d32f2f" stroke-width="1.5" />
-            <line x1="360" y1="60" x2="360" y2="140" stroke="#d32f2f" stroke-width="1.5" />
+    </section>
+    <article class="container">
+        <p class="texto">
+            Il progettista riceve il documento di specifiche funzionali, da questo deriva un progetto. <br>
+            Il progetto di software è uno schema che scompone il software nei suoi elementi base, questi elementi devono collaborare fra loro per implementare tutte le funzionalità richieste. 
+            Una scomposizione tipica è quella per livelli, che prevede:
+        </p>
+        <div class="listas">
+        <ul>
+            <li>DAL (Data Access Layer), parte del software che legge e scrive i dati nel datebase (archivo)</li>
+            <li>Flussi, parte del software che controlla e trasforma i dati</li>
+            <li>GUI (Graphical User Interface), parte che dialoga con l'utente</li>
+        </ul>
+            <ol>
+                <li>GUI</li>
+                <li>Flussi</li>
+                <li>DAL
+                    <ul>
+                        <li>DB</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <p class="texto">
+            Il progettista deve decidere quale blocchi dello schema devono essere prodotti, quali devono essere acquisiti dall'esterno, quali devono essere riutilizzati. <br>
+            I blocchi devono dialogare fra loro, scambiandosi dati, in modo che i blocchi possano lavorare assieme come un unico software. <br>
+            La scomposizione può essere multilivello: al primo livello si crea una scomposizione a macroaree, 
+            nella quale ci si concentra sui principali aspetti funzionali, ai livelli successivi ogni blocco viene ulteriormente smontato in blocchi più piccoli. <br>
+        </p>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="720"
+                height="320"
+                viewBox="0 0 720 320"
+                style="background:#F2F2F2"
+                >
+                <!-- Líneas de conexión -->
+                <line x1="360" y1="60" x2="220" y2="140" stroke="#d32f2f" stroke-width="1.5" />
+                <line x1="360" y1="60" x2="500" y2="140" stroke="#d32f2f" stroke-width="1.5" />
+                <line x1="360" y1="60" x2="360" y2="140" stroke="#d32f2f" stroke-width="1.5" />
 
-            <!-- Cuadro superior: GUI -->
-            <rect x="320" y="20" width="80" height="40" fill="none" stroke="#000" stroke-width="1.5" />
-            <text x="360" y="46" font-size="16" text-anchor="middle" font-family="Arial" font-weight="bold">
-                GUI
-            </text>
+                <!-- Cuadro superior: GUI -->
+                <rect x="320" y="20" width="80" height="40" fill="none" stroke="#000" stroke-width="1.5" />
+                <text x="360" y="46" font-size="16" text-anchor="middle" font-family="Arial" font-weight="bold">
+                    GUI
+                </text>
 
-            <!-- Cuadro izquierdo: Login -->
-            <rect x="180" y="140" width="90" height="50" fill="none" stroke="#000" stroke-width="1.5" />
-            <text x="225" y="170" font-size="16" text-anchor="middle" font-family="Arial" font-weight="bold">
-                Login
-            </text>
+                <!-- Cuadro izquierdo: Login -->
+                <rect x="180" y="140" width="90" height="50" fill="none" stroke="#000" stroke-width="1.5" />
+                <text x="225" y="170" font-size="16" text-anchor="middle" font-family="Arial" font-weight="bold">
+                    Login
+                </text>
 
-            <!-- Cuadro central: Registrazione -->
-            <rect x="310" y="140" width="120" height="50" fill="none" stroke="#000" stroke-width="1.5" />
-            <text x="370" y="170" font-size="16" text-anchor="middle" font-family="Arial" font-weight="bold">
-                Registrazione
-            </text>
+                <!-- Cuadro central: Registrazione -->
+                <rect x="310" y="140" width="120" height="50" fill="none" stroke="#000" stroke-width="1.5" />
+                <text x="370" y="170" font-size="16" text-anchor="middle" font-family="Arial" font-weight="bold">
+                    Registrazione
+                </text>
 
-            <!-- Cuadro derecho: Anagrafica clienti -->
-            <rect x="480" y="140" width="150" height="50" fill="none" stroke="#000" stroke-width="1.5" />
-            <text x="555" y="170" font-size="16" text-anchor="middle" font-family="Arial" font-weight="bold">
-                Anagrafica clienti
-            </text>
+                <!-- Cuadro derecho: Anagrafica clienti -->
+                <rect x="480" y="140" width="150" height="50" fill="none" stroke="#000" stroke-width="1.5" />
+                <text x="555" y="170" font-size="16" text-anchor="middle" font-family="Arial" font-weight="bold">
+                    Anagrafica clienti
+                </text>
 
-            <!-- Flecha roja "stato" -->
-            <line x1="230" y1="190" x2="245" y2="215" stroke="#d32f2f" stroke-width="1.5" marker-end="url(#arrow-red)" />
-            <text x="250" y="225" font-size="14" font-family="Arial" fill="#d32f2f">stato</text>
+                <!-- Flecha roja "stato" -->
+                <line x1="230" y1="190" x2="245" y2="215" stroke="#d32f2f" stroke-width="1.5" marker-end="url(#arrow-red)" />
+                <text x="250" y="225" font-size="14" font-family="Arial" fill="#d32f2f">stato</text>
 
-            <!-- Flecha verde "username / password" -->
-            <line x1="170" y1="190" x2="155" y2="215" stroke="#4caf50" stroke-width="1.5" marker-end="url(#arrow-green)" />
-            <text x="70" y="215" font-size="14" font-family="Arial" fill="#4caf50">username</text>
-            <text x="70" y="230" font-size="14" font-family="Arial" fill="#4caf50">password</text>
+                <!-- Flecha verde "username / password" -->
+                <line x1="170" y1="190" x2="155" y2="215" stroke="#4caf50" stroke-width="1.5" marker-end="url(#arrow-green)" />
+                <text x="70" y="215" font-size="14" font-family="Arial" fill="#4caf50">username</text>
+                <text x="70" y="230" font-size="14" font-family="Arial" fill="#4caf50">password</text>
 
-            <!-- Definiciones de flechas -->
-            <defs>
-                <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
-                <path d="M0,0 L0,6 L9,3 z" fill="#d32f2f" />
-                </marker>
-                <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
-                <path d="M0,0 L0,6 L9,3 z" fill="#4caf50" />
-                </marker>
-            </defs> 
-            <br>
-        </svg>
-
-        Il progettista deve indicare, per ogni blocco, quali informazioni escono, quali informazioni entrano, quali vincoli sono previsti (dati obbligatori, tipi di dato, ...). <br>
-        Ogni blocco può essere riutilizzato in progetti futuri (o importato da quelli passati), questo semplifica lo sviluppo, questo ha portato nel tempo a progetti standardizzati (framework, librerie, ...) e 
-        a best practice diffuse. <br>
-        Un framework è un sistema che crea automaticamente (in fase di implementazione) la struttura dei blocchi, una libreria è un blocco già pronto acquisito esternamente. <br>
-        Esistono linguaggi standard per la stesura di progetti, il più diffuso è UML (Unified Modeling Language) <br>
-        UML consente di rappresentare lo schema progettuale (blocchi e dati in ingresso/uscita) in maniera standardizzata, 
-        questo consente di utilizzare strumenti che creano automaticamente la struttura del software a partire dal codice UML
-    </p>
-    
+                <!-- Definiciones de flechas -->
+                <defs>
+                    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#d32f2f" />
+                    </marker>
+                    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#4caf50" />
+                    </marker>
+                </defs> 
+            </svg>
+        <p class="texto">
+            Il progettista deve indicare, per ogni blocco, quali informazioni escono, quali informazioni entrano, quali vincoli sono previsti (dati obbligatori, tipi di dato, ...). <br>
+            Ogni blocco può essere riutilizzato in progetti futuri (o importato da quelli passati), questo semplifica lo sviluppo, questo ha portato nel tempo a progetti standardizzati (framework, librerie, ...) e 
+            a best practice diffuse. <br>
+            Un framework è un sistema che crea automaticamente (in fase di implementazione) la struttura dei blocchi, una libreria è un blocco già pronto acquisito esternamente. <br>
+            Esistono linguaggi standard per la stesura di progetti, il più diffuso è UML (Unified Modeling Language) <br>
+            UML consente di rappresentare lo schema progettuale (blocchi e dati in ingresso/uscita) in maniera standardizzata, 
+            questo consente di utilizzare strumenti che creano automaticamente la struttura del software a partire dal codice UML
+        </p>
+    </article>
 </body>
 </html>
