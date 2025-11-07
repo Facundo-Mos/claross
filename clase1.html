@@ -63,6 +63,7 @@
             Il progetto di software è uno schema che scompone il software nei suoi elementi base, questi elementi devono collaborare fra loro per implementare tutte le funzionalità richieste. 
             Una scomposizione tipica è quella per livelli, che prevede:
         </p>
+    </article>
         <div class="listas">
         <ul>
             <li>DAL (Data Access Layer), parte del software che legge e scrive i dati nel datebase (archivo)</li>
@@ -79,18 +80,20 @@
                 </li>
             </ol>
         </div>
+    <article>
         <p class="texto">
             Il progettista deve decidere quale blocchi dello schema devono essere prodotti, quali devono essere acquisiti dall'esterno, quali devono essere riutilizzati. <br>
             I blocchi devono dialogare fra loro, scambiandosi dati, in modo che i blocchi possano lavorare assieme come un unico software. <br>
             La scomposizione può essere multilivello: al primo livello si crea una scomposizione a macroaree, 
             nella quale ci si concentra sui principali aspetti funzionali, ai livelli successivi ogni blocco viene ulteriormente smontato in blocchi più piccoli. <br>
         </p>
+    </article>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="720"
                 height="320"
                 viewBox="0 0 720 320"
-                style="background:#F2F2F2"
+                style="background:#83b1c3"
                 >
                 <!-- Líneas de conexión -->
                 <line x1="360" y1="60" x2="220" y2="140" stroke="#d32f2f" stroke-width="1.5" />
@@ -127,8 +130,8 @@
 
                 <!-- Flecha verde "username / password" -->
                 <line x1="170" y1="190" x2="155" y2="215" stroke="#4caf50" stroke-width="1.5" marker-end="url(#arrow-green)" />
-                <text x="70" y="215" font-size="14" font-family="Arial" fill="#4caf50">username</text>
-                <text x="70" y="230" font-size="14" font-family="Arial" fill="#4caf50">password</text>
+                <text x="70" y="215" font-size="14" font-family="Arial" fill="#black">username</text>
+                <text x="70" y="230" font-size="14" font-family="Arial" fill="#black">password</text>
 
                 <!-- Definiciones de flechas -->
                 <defs>
@@ -140,6 +143,7 @@
                     </marker>
                 </defs> 
             </svg>
+    <article>
         <p class="texto">
             Il progettista deve indicare, per ogni blocco, quali informazioni escono, quali informazioni entrano, quali vincoli sono previsti (dati obbligatori, tipi di dato, ...). <br>
             Ogni blocco può essere riutilizzato in progetti futuri (o importato da quelli passati), questo semplifica lo sviluppo, questo ha portato nel tempo a progetti standardizzati (framework, librerie, ...) e 

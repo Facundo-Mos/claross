@@ -88,7 +88,7 @@ section article {
     border-radius: 0.5rem;
 }
 
-section article:hover {      /*hover sirve para darle animacion cuando pasa el mause encima*/
+article:hover {      /*hover sirve para darle animacion cuando pasa el mause encima*/
 box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.7);
 
 }
