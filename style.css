@@ -1,35 +1,35 @@
-/* ======= ENCABEZADO PRINCIPAL DE LA PÁGINA ======= */
+/* ======= ENCABEZADO PRINCIPAL DE LA P�GINA ======= */
 header {
     background-color: rgb(17, 10, 41);  /* Color de fondo oscuro del encabezado */
     color: white;                       /* Texto en color blanco dentro del header */
     padding: 2rem 2rem;                 /* Espaciado interno (superior/inferior y laterales) */
 }
 
-/* ======= ESTILO PARA EL TÍTULO PRINCIPAL DENTRO DEL HEADER ======= */
+/* ======= ESTILO PARA EL T�TULO PRINCIPAL DENTRO DEL HEADER ======= */
 .cabecera {
     position: relative;                 /* Permite posicionar elementos hijos de forma absoluta si es necesario */
     text-align: center;                 /* Centra el texto horizontalmente */
-    font-size: 40px;                    /* Tamaño grande de fuente */
+    font-size: 40px;                    /* Tama�o grande de fuente */
     font-family: "Momo Trust Display", sans-serif;  /* Tipo de fuente personalizada */
     font-weight: 400;                   /* Grosor de la fuente: normal */
     font-style: normal;                 /* Fuente sin cursiva */
 }
 
-/* ======= ESTILO GENERAL DEL CUERPO DE LA PÁGINA ======= */
+/* ======= ESTILO GENERAL DEL CUERPO DE LA P�GINA ======= */
 body {
-    background-color: #83b1c3;          /* Fondo gris claro para toda la página */
+    background-color: #83b1c3;          /* Fondo gris claro para toda la p�gina */
     text-align: center;                 /* Centra el texto horizontalmente */
 }
 
-/* ======= SEGUNDOS TÍTULOS O SUBTÍTULOS ======= */
+/* ======= SEGUNDOS T�TULOS O SUBT�TULOS ======= */
 .titulo2 {
     text-align: center;                 /* Centra el texto horizontalmente */
 }
 
-/* ======= ESTILO PARA TÍTULOS DESTACADOS CON RECUADRO ======= */
+/* ======= ESTILO PARA T�TULOS DESTACADOS CON RECUADRO ======= */
 .titulos {
     position: relative;                 /* Base para posicionar elementos hijos relativos */
-    font-size: 40px;                    /* Tamaño grande de texto */
+    font-size: 40px;                    /* Tama�o grande de texto */
     font-family: "Momo Trust Display", sans-serif;  /* Fuente personalizada */
     font-weight: 400;                   /* Peso de fuente normal */
     font-style: normal;                 /* Fuente sin cursiva */
@@ -39,7 +39,7 @@ body {
     border-radius: 8px;                 /* Esquinas redondeadas del recuadro */
 }
 
-/* ======= ESTILO GENERAL PARA PÁRRAFOS O BLOQUES DE TEXTO ======= */
+/* ======= ESTILO GENERAL PARA P�RRAFOS O BLOQUES DE TEXTO ======= */
 .texto {
     position: relative;                 /* Permite posicionamiento relativo */
     font-family: "Momo Trust Display", sans-serif;  /* Misma fuente para coherencia visual */
@@ -48,7 +48,7 @@ body {
     border: 2px solid black;            /* Borde negro alrededor del texto */
     padding: 10px 20px;                 /* Espaciado interno dentro del recuadro */
     border-radius: 8px;                  /* Esquinas redondeadas del recuadro */
-    background-color: #F2F2F2;          /* Fondo gris claro para toda la página */
+    background-color: #F2F2F2;          /* Fondo gris claro para toda la p�gina */
 }
 
 /* ======= ESTILO BASE PARA TODAS LAS ETIQUETAS <div> ======= */
@@ -59,17 +59,17 @@ div {
     font-style: normal;                 /* Sin cursiva */
 }
 
-/* ======= LISTAS ORDENADAS (CON NÚMEROS) ======= */
+/* ======= LISTAS ORDENADAS (CON N�MEROS) ======= */
 ol {
     text-align: center;                 /* Centra el contenido de los elementos de la lista */
-    list-style-position: inside;        /* Mueve los números dentro del bloque de texto */
+    list-style-position: inside;        /* Mueve los n�meros dentro del bloque de texto */
     padding-left: 0;                    /* Elimina el margen izquierdo por defecto */
 }
 
-/* ======= LISTAS DESORDENADAS (CON VIÑETAS) ======= */
+/* ======= LISTAS DESORDENADAS (CON VI�ETAS) ======= */
 ul {
     text-align: center;                 /* Centra el contenido de los elementos de la lista */
-    list-style-position: inside;        /* Mueve las viñetas dentro del texto */
+    list-style-position: inside;        /* Mueve las vi�etas dentro del texto */
     padding-left: 0;                    /* Quita el margen izquierdo predeterminado */
     font-family: "Momo Trust Display", sans-serif;  /* Fuente uniforme */
     font-weight: 400;                   /* Grosor normal */
@@ -78,7 +78,7 @@ ul {
 
 .container {
     width: 90%; /* Ocupa el 90% del ancho de la pantalla */
-    max-width: 800px; /* Pero nunca será más ancho de 800px */
+    max-width: 800px; /* Pero nunca ser� m�s ancho de 800px */
     margin: 0 auto;
 }
 
