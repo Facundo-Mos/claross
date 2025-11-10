@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Classe con Claudio Rossi</h1>
+    <h3 class="titulos">Distribuzione</h3>
+    <p>
+        la fase di distribuzione è quella nella quale il prodotto viene fornito al cliente.
+        La distribuzione di un software può avvenire secondo due modalità principali:
+    </p>
+    <ul>
+        <li>Distribuzione fisica, un supporto fisico (pendrive, DVD...) contenente una copia del software</li>
+        <li>Distribuzione online, il file di installazione viene reso disponibile tramite siti web o applicazioni dedicate</li>
+    </ul>
+    <p>
+        La distribuzione online ha costi bassi e semplifica la distribuzione di versioni aggionrate dell'installazione la distribuzione può avvernire tramite:
+    </p>
+    <ul>
+        <li>Store speciallizzati (App store, Play Store)</li>
+        <li>Sitit web aziendali</li>
+    </ul>
+    <p>
+        Gli store generano dei costi (iscrizioni e commissioni sulle vendite), ma semplificano la gestione della distribuzione, della installazione e degli aggiornamenti.
+        I siti aziendali (di proprietà dell'azienda che produce il software) generano costi di gestione del sito, ma nessun costo per la vendita e la 
+        distribuzione delle applicazioni
+        Molte applicazioni vengono distribuzite direttamente tramite GitHub, dato che il sistema consente di generare la versione scaricabile dell'applicazione contenuta
+        nel repository.
+        La distribuzione su supporto fisico ha costi alti (stampa e distribuzione dei supporti,...) ma non ha commissioni e consente di distribuire software di 
+        qaulsiasi dimensione, inoltre consente di gestire la protezione hardware.
+        la distribuzione fisica crea limiti all'aggiornamento del sistema di installazione, ma non limita la possibilità di distribuire aggiornamenti dell'applicazione
+        installata 
+    </p>
+    <h3 class="titulos">Modalità di uso</h3>
+    <p>
+        Il software può essere utilizzato con due modelli principali:
+    </p>
+    <ul>
+        <li>On Premise, il software è installato sul computer dell'utente</li>
+        <li>SAAS (software As A Service), il software viene utillizato dall'utente tramite internet</li>
+    </ul>
+    <p>
+        L'utilizzo On Premise semplifica la gestione dei software che non richiedono connessione e devono essere utilizzati anche in mobilità
+        L'utilizzo On Premise sfrutta l'hardware del computer locale, questo consente l'esecuzione di alcuni software (grafica professionele, videogiochi,...) e impedisce 
+        l'essecuzione di alcuni software (LLM, software che richiedono enorme potenza di calcolo, ...).
+        Il SAAS semplifica la gestione delle licenze, consente di utilizzare server molto potenti per muovere software complessi, ma l'utente deve pagare un canone continuo  
+    </p>
+    <h3 class="titulos">Distribuzione del software</h3>
+    <p class="texto">
+        Quando si realizza un software è necessario decidere quele tipo di distribuzione e di licenza d'uso adotttare, questa scelta avviene in fase di analisi
+        La distribuzione è normalmente effettuata tramite canali digitali, in qualche caso si utilizza ancora la distribuzione fisica.
+        In base alle esigenze del cliente e del software da svilluppare si devono scegliere le modalità di distribuzione e installazione più adatte a soddisfare l'esigenza
+    </p>
+    <h3 class="titulos">Manutenzione</h3>
+    <p class="texto">
+        Dopo aver distribuito il software inizia la fase di manuntenzione, la manuntenzione si divide in:
+    </p>
+    <ul>
+        <li>Nuove implementazione</li>
+        <li>Correzione di errori</li>
+    </ul>
+    <p class="texto">
+        Le nuove implementazioni aggiungono funzionalità al programma (o modificano radicalmente quelle esistenti), se richiedono alti costi di sviluppo è 
+        nomale contrattuallizzarli e far pagare al commitente le nuove implementazioni.
+        La correzione di errori ha lo scopo di rendere ottimale il software, correggendo errori(output errati, blocchi del software,...) e garantendo 
+        il funzionamento del software anche in caso di evoluzione del contesto hardware/software.
+        La Manutenzione è (nel modello di sviluppo top-down) molto costosa perchè è la fase più lunga del ciclo di vita, dato che dura fino a quando il software
+        è garantito al cliente.
+    </p>
+    <h3 class="titulos">Ciclo di vita Agile</h3>
+    <p class="texto">
+        Il modello di sviluppo top-down evidenzia due criticità 
+    </p>
+    <ul>
+        <li>Lungo tempo necessario fra l'analisi e la distribuzione</li>
+        <li>Alti costi di manuntenzione</li>
+    </ul>
+    <p class="texto">
+        Il tempo che pasa fra l'analisi e la distribuzione genera dei costi che verrano ripagati solamente in fase di distribuzione, questo aumenta i costi aziendali
+        Per mitigare questi costi (e i relativi rischi), la produzione del software si è spostata verso un sviluppo che accorci i tempi fra analisi e distribuzione: 
+        Il modello Agile si basa sulla scomposizione di un software in più versioni incrementali: ogni versione aggiunge funzionalità a quella precedente, in un processo iterativo
+    </p>
+    <img src="" alt="">
+    <p class="texto">
+        Lo sviluppo agile si basa su rilasci progressivi di funzionalità: la prima versione del software contiene solo parte delle funzionalità previste per il sistema complessivo,
+        ogni versione successiva fa crescere le funzionalità del software.
+        I rilasci progressivi rendono più veloce la prima distribuzione, consentendo di ridurre il tempo che intercorre fra l'analisi e l'incasso, pur riducendo l'incasso stesso.
+        Il modello agile è molto utilizzato con la Distribuzione SAAS (anche se può essere applicato anche a sistemi On Premise).
+        Lo sviluppo agile consente di far evolvere il software in base ai feedback degli utenti, creando un rapporto più stretto e bidirezionale fra software house e utenti, 
+        consentendo di adattare il software alle richieste degli utenti.
+    </p>
+    <h3 class="titulos">Branch</h3>
+    <p class="texto">
+        Il controllo di versione consente di creare più rami di sviluppo(Branch) per portare avanti l'implementazione di un software.
+        I Branch consentono di modificare il software (Branch) senza toccare il codice distribuito ai clienti (ramo main).
+        Quando si cambia il ramo attivo, il controllo di versione sostituisce tutti i file presenti nel proggetto con quelli del ramo selezionato,
+        <!-- falta texto-->
+    </p>
+    <img src="" alt="">
+    <p class="texto">
+        Quando si lavora con i branch , team di svilluppatori  diversi possono lavorare su branch diversi
+        <!--Falta texto-->
+    </p>
+    <img src="" alt="">
+    <p class="texto">
+        Esercizio
+    </p>
+    <ul>
+        <li>Creare il branch "nuova implementazione</li>
+        <li>Nel branch "nuova implementazione" aggiungere la cartella "test realese"</li>
+        <li>Nella cartella "test realese" creare il file "nuova implementazione"</li>
+        <li>nel file "nuova implementazione" scrivere</li> 
+        <li>questa è la nuova implementazione
+            questo file e questa cartella non sono presenti negli altri branch</li> 
+        <li>fare commit e pusch del branch "nuova implementazione</li>
+    </ul>
+    <h3 class="titulos"> Merge</h3>
+    <p class="texto">
+        Il comando Merge consente di fondere due rami: a partire da un ramo,
+        <!-- falta texto-->
+    </p>
+</body>
+</html>
