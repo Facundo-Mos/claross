@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Classe di Claudio Rossi</h1>
+    <h3 class="titulos">Stima dei costi di un progetto</h3>
+    <p>
+        Quando inizia il ciclo di vita di un prodotto software è necessario stimare i costi della produzione, in modo da:
+    </p>
+    <ul>
+        <li>Valutare il rischio dellinvestimento</li>
+        <li>Valutare il prezzo finale del prodotto</li>
+    </ul>
+    <p>
+        Per stimare i costi di produzione si possono utilizzare diversi approcci, il più semplice è quello del tempo-uomo: si stima quanto tempo serve 
+        per completare il progetto e si moltiplica il totale per il costo orario.
+        Il tempo uomo si calcola moltiplicando il numero di persone al lavoro per il tempo impiegato al lavoro 
+        Es:
+        Per produrre software servono 10 persono che lavorano per 50 ore ognuna, il tempo-uomo è di 500 ore (10x50)
+        il costo stimato è parzialmente attendibile: se i tempi di sviluppo sono minori du quanto stimato, il costo reale sarà minore
+        di quello atteso, se i tempi sono superiori a quanto è stimato, il costo reale sarà superiore.
+        Il rischio nasce quando si rializza un prodotto per il mercato, mentre è inesistente quando si realizza un prodotto 
+        su commissione, il cliente paga tutti i costi (previsti) assumendosi il rischio dello sviluppo.
+        Quando si realizza un prodotto per il mercato, si deve stimare quanti clienti dovremo avere per pagare il costo di sviluppo: se raggiungeremo
+        il numero di clienti necessari, il costo di sviluppo sarà ripagato se non raggiungeremo il numero di clienti necessari, il costo di sviluppo 
+        non sarà ripagato generando una perdita.
+        </p>
+        <h3 class="titulos">Stima dei prezzi di un prodotto</h3>
+        <p>
+            Per stimare il prezzo di un prodotto si possono utilizzaredue metodi:
+        </p>
+        <ul>
+            <li>Approccio By Cost</li>
+            <li>Approcio By Value</li>
+        </ul>
+        <p>
+            L'approcio By Cost (basato sul costo) prende in considerazione il costo di progettazione, aggiunge una percentuale (ricarico) 
+            per ottenere il prezzo di vendita
+            L'approcio By Value (basato sul valore) prende in considerazione il valore di mercato del prodotto offerto per valutare il prezzoal quale 
+            proporre il prodotto
+            In alcuni casi si utilizza un mix dei due approcci precedenti: si utilizza l'approcio By Cost per valutare il prezzo minimo e l'approccio By Value
+            per valutare il prezzo massimo, per creare un'offerta compresa fra questi due estremi.
+            se il valore che emerge dall'approccio By Value è minore di quello che emerge dall'approccio By Cos (il prezzo di mercato è minore del costo che dobbiamo 
+            sostenere), il prodotto può essere venduto solamente in perdita.
+            se ci si rivolge ad un solo cliente, si utlizza normalmente l'approccio precedente, se ci si rivolge al mercato si utilizza un approccio leggermente diverso:
+        </p>
+        <ul>
+            <li>Si valutano i costi del progetto</li>
+            <li>Si valuta il valore in base ai prodotti simili presenti sul mercato</li>
+            <li>Si cacola quanti clienti servono per pagare i costi del progetto, dividendo il costo per il prezzo di mercato</li>
+        </ul>
+        <p>
+            il numero di clienti neccesari a pagare il costo di sviluppo permette di valutare il rischio di prodizione: più è altoil numero di clienti 
+            neccesario, più è alto il rischio di sviluppo
+        </p>
+        <h3 class="titulos">Best practice per il controllo di vrsione</h3>
+        <p>
+            Per utilizzare al meglio il controllo di versione esistono alcune best practice:
+        </p>
+        <ul>
+            <li>Piccoli passi</li>
+            <li>Stati certi</li>
+        </ul>
+        <p>
+            Quando si lavora con il controllo di versione è preferibile procedere per piccoli passi di sviluppo, invece di cercare di risolvere l'intero
+            problema in unico passaggio.
+            Questo approccio consente di andare "in avanti" nello sviluppo costruendo una stroria (grazie al controllo di versione) nella quale si può "tornare in dietro"
+            quando il passo successivo non porta ai risultati desiderati
+            L'implementatore deve suddividere il compito che gki è stato assegnato in passaggi più piccoli, per implementare ogni passaggio e "congelato" del controllo di 
+            versione quando il passaggio è completo
+        </p>
+        <!--falta la lista-->
+        <p>
+            L'implementatore deve fare commit solamente di versioni funzionanti (anche se incomplete) per garantire che le Pull fatte dall'intero team generino sempre versioni
+            del software utilizzabili
+            Es:
+        </p>
+        <ul>
+            <li>L'implementatore aggiunge una parte di codice che causa un Crash del server</li>
+            <li>Il resto del Team utilizza Pull (perche riceve la notifica della nuova versione disponibile sul server)</li>
+            <li>L'intero team è bloccato fino a quando non viene risolto il bug</li>
+        </ul>
+    </body>
+</html>
